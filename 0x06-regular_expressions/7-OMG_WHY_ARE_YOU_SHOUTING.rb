@@ -1,2 +1,4 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/[[:upper:]]/).join
+# regular expression must be only matching: capital letters
+match = ARGV[0].scan(/[A-Z]*/)
+puts match.empty? ? "" : match.join
