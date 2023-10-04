@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/Holberton/).join
+matches = ARGV[0].scan(/School/)
+
+# Print the matches or an empty string if no matches were found
+puts matches.empty? ? "" : matches.join
