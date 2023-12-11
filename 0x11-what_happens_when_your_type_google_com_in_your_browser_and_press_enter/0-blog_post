@@ -1,0 +1,21 @@
+Step 1: DNS Request
+Upon entering "https://www.google.com" in your browser's address bar and hitting Enter, the first action taken is a DNS (Domain Name System) lookup. DNS is like the internet's phonebook, translating human-readable domain names (like google.com) into IP addresses (like 172.217.7.206). Your browser sends a DNS query to a DNS resolver to find the IP address associated with "www.google.com".
+Step 2: TCP/IP Connection
+Once the DNS resolver returns the IP address, your browser initiates a TCP (Transmission Control Protocol) connection to the server hosting that IP address. TCP establishes a connection between your computer and the server to ensure data reliability and accuracy during transmission.
+Step 3: Firewall Check
+Before the connection is established, it might go through a firewall, which acts as a security barrier to monitor and control incoming and outgoing network traffic. The firewall checks if the request meets the security criteria set by the network administrator.
+Step 4: HTTPS/SSL Handshake
+For secure communication, HTTPS (Hypertext Transfer Protocol Secure) is used. HTTPS encrypts the data exchanged between your browser and the server using SSL/TLS (Secure Socket Layer/Transport Layer Security) protocols. The SSL/TLS handshake occurs, where your browser and the server exchange cryptographic keys to establish a secure connection.
+Step 5: Load Balancer
+For high-traffic websites like Google, multiple servers handle incoming requests. A load balancer distributes incoming traffic across these servers to ensure efficient utilization of resources and maintain optimal performance. It redirects your request to one of Google's servers capable of handling it.
+Step 6: Web Server
+After passing through the load balancer, your request reaches Google's web server. The web server receives the request, processes it, and looks for the specific webpage or content you requested, in this case, the Google homepage.
+Step 7: Application Server
+Sometimes, for dynamic content or specific functions (like search queries), the request is forwarded from the web server to an application server. The application server executes the necessary code or retrieves data from databases to generate the requested content.
+Step 8: Database
+If the requested information is stored in a database (such as user accounts, search indexes, etc.), the application server queries the database to retrieve the required data.
+Step 9: Data Retrieval and Response
+The requested data (in this case, the Google homepage) is gathered from various sources, processed, and formatted as an HTML page. This response travels back through the same path it came from—application server, web server, possibly through a load balancer, firewall, and finally, the TCP/IP connection to your browser.
+Step 10: Rendering the Webpage
+Your browser receives the HTML content along with any additional resources like CSS, JavaScript, and images required to render the webpage. It interprets this data and displays the Google homepage on your screen.
+In summary, typing "https://www.google.com" in your browser involves a series of steps, including DNS resolution, establishing a secure connection, load balancing for traffic distribution, server-side processing, data retrieval from databases, and finally rendering the webpage for you to interact with.
